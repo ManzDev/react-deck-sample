@@ -1,0 +1,30 @@
+{
+  "name": "cards-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html --out-dir build/",
+    "start": "parcel src/index.html",
+    "dev": "parcel serve src/index.html && parcel watch src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "autoprefixer": "^8.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.8.1",
+    "postcss-modules": "^1.1.0",
+    "postcss-nested": "^3.0.0",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "lodash.range": "^3.2.0",
+    "lodash.shuffle": "^4.2.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}

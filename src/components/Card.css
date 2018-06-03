@@ -1,0 +1,208 @@
+/* Card properties */
+.card {
+    background-color:#FFF;
+    border-radius:4px;
+    border:1px solid #EEE;
+    width: 100px;
+    height: 175px;
+    margin:5px;
+    padding:15px;
+    display:inline-block;
+    transition:transform .25s ease-in;
+    position:relative;
+    vertical-align:top;
+    cursor:pointer;
+}
+
+.card .content {
+    display:flex;
+    border:1px solid #EEE;
+    border-radius:2px;
+    height:100%;
+    font-size:36px;
+}
+
+/* Suit */
+.♦️, .♥️ {
+    color:#ff0000;
+}
+
+.card .num {
+    position:absolute;
+    right:6px;
+    top:6px;
+    z-index:5;
+    font-family:Montserrat;
+    font-weight:bold;
+    background:#FFF;
+}
+
+/* Reverse card */
+
+.card.flipped {
+    background:#e0e0e0 no-repeat center center;
+    background-size:contain;
+    background-blend-mode:multiply;
+    transform:rotateY(360deg);
+}
+
+.card.flipped span {
+    display:none;
+}
+
+.card.flipped .content {
+    border:0;
+}
+
+/* Card symbol distribution */
+
+.card.c1 .content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:64px;
+}
+
+.card.c2 .content {
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    font-size:56px;
+}
+
+.card.c3 .content {
+    display:grid;
+    justify-content:center;
+    font-size:48px;
+}
+
+.card.c4 .content {
+    display: grid;
+    grid-template-areas: "s s" "s s";
+    justify-items:center;
+    align-items:center;
+    text-align:center;
+    font-size:48px;
+}
+
+.card.c5 .content {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    justify-items:center;
+    align-items:center;
+    text-align:center;
+    font-size:48px;
+}
+
+.card.c5 .suit:nth-child(5) {
+    position:relative;
+    top:-65%;
+    left:25%;
+}
+
+.card.c6 .content {
+    display:grid;
+    grid-template-areas: "s s" "s s" "s s";
+    justify-items:center;
+    align-items:center;
+    font-size:48px;
+}
+
+.card.c7 .content {
+    display:grid;
+    grid-template-areas: "s s" "s s" "s s";
+    justify-items:center;
+    align-items:center;
+    font-size:48px;
+}
+
+.card.c7 .suit:nth-child(7) {
+    position:relative;
+    top:-75%;
+    left:25%;
+}
+
+.card.c8 .content {
+    display:grid;
+    grid-template-areas: "s s" "s s" "s s";
+    justify-items:center;
+    align-items:center;
+    font-size:48px;
+}
+
+.card.c8 .suit:nth-child(7) {
+    position:relative;
+    top:-75%;
+    left:25%;
+}
+
+.card.c8 .suit:nth-child(8) {
+    position:relative;
+    top:-47%;
+    left:-25%;
+}
+
+.card.c9 .content {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-items:center;
+    align-items:center;
+    font-size:48px;
+}
+
+.card.c9 .suit:nth-child(9) {
+    position:relative;
+    top:-67%;
+    left:25%;
+}
+
+.card.c10 .content {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-items:center;
+    align-items:center;
+    font-size:48px;
+}
+
+.card.c10 .suit:nth-child(9) {
+    position:relative;
+    top:-88%;
+    left:25%;
+}
+
+.card.c10 .suit:nth-child(10) {
+    position:relative;
+    top:-42%;
+    left:-25%;
+}
+
+.card.c11 .content,
+.card.c12 .content,
+.card.c13 .content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.card.c11 .suit,
+.card.c12 .suit,
+.card.c13 .suit {
+    position:absolute;
+    font-size:64px;
+}
+
+.card.c11 .suit::before {
+    content:"J";
+}
+
+.card.c12 .suit::before {
+    content:"Q";
+}
+
+.card.c13 .suit::before {
+    content:"K";
+}

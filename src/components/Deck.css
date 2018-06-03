@@ -1,0 +1,11 @@
+.deck {
+    text-align:center;
+}
+
+.deck.normal .card.flipped {
+    background-image:url(../img/back-normal.png);
+}
+
+.deck.bean .card.flipped {
+    background-image:url(../img/back-bean.jpg), linear-gradient(white, #8e8e8e);
+}
