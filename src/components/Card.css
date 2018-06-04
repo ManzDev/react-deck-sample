@@ -15,6 +15,7 @@
     top:0;
     left:0;
     transition:top .5s ease, left .5s ease, transform .1s ease-in;
+    user-select:none;
 }
 
 .card:hover {
