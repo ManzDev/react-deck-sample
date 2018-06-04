@@ -8,10 +8,19 @@
     margin:5px;
     padding:15px;
     display:inline-block;
-    transition:transform .25s ease-in;
     position:relative;
     vertical-align:top;
     cursor:pointer;
+    position:relative;
+    top:0;
+    left:0;
+    transition:top .5s ease, left .5s ease, transform .1s ease-in;
+}
+
+.card:hover {
+    top:-10px;
+    left:-5px;
+    box-shadow:5px 10px 10px RGBA(0,0,0, .5);
 }
 
 .card .content {
@@ -43,7 +52,7 @@
     background:#e0e0e0 no-repeat center center;
     background-size:contain;
     background-blend-mode:multiply;
-    transform:rotateY(360deg);
+    transform:rotateY(180deg);
 }
 
 .card.flipped span {
